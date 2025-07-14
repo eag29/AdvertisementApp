@@ -19,22 +19,22 @@ Bu proje, bir yazılım şirketinin web sitesi için hazırlanmış, N Katmanlı
 
 # 🗂️ Katmanlar ve Sorumlulukları
 
-📁 AdvertisementApp2.Entities
+📁 AdvertisementApp.Entities
 Veritabanı tablolarını temsil eden Entity sınıflarının bulunduğu katmandır.
 
-📁 AdvertisementApp2.Common
+📁 AdvertisementApp.Common
 Katmanlar arası ortak kullanılan yardımcı sınıfların ve enum'ların yer aldığı katmandır (örneğin Response, IResponse, CustomValidationError vs.).
 
-📁 AdvertisementApp2.Dtos
+📁 AdvertisementApp.Dtos
 Kullanıcıya ya da servislere veri taşımak amacıyla kullanılan DTO sınıflarını içerir.
 
-📁 AdvertisementApp2.DAL
+📁 AdvertisementApp.DAL
 Veri erişim katmanıdır. Repository’ler, DbContext, UnitOfWork gibi yapıların bulunduğu kısımdır.
 
-📁 AdvertisementApp2.Business
+📁 AdvertisementApp.Business
 İş mantığının yer aldığı katmandır. Servisler, Validasyon Kuralları, AutoMapper profilleri burada yer alır.
 
-📁 AdvertisementApp2.UI
+📁 AdvertisementApp.UI
 Kullanıcı arayüzünün bulunduğu katmandır. MVC yapısına uygun olarak Controller, View ve Model klasörleri içerir.
 
 
@@ -54,10 +54,13 @@ Kullanıcı arayüzünün bulunduğu katmandır. MVC yapısına uygun olarak Con
 - Kullanıcı başvurularını inceleyebilir.
 
 # 🔐 Kimlik Doğrulama ve Yetkilendirme
+
 - Role-based authorization sistemi kullanılmıştır.
 - Admin ve User rollerine göre erişim kontrolü yapılmaktadır.
 
+
 # 📬 İletişim
+
 👤 Geliştirici: Emir Ali Girgin
 🔗 LinkedIn: https://www.linkedin.com/in/emir-ali-girgin-a190b1201/
 💻 GitHub: https://github.com/eag29
