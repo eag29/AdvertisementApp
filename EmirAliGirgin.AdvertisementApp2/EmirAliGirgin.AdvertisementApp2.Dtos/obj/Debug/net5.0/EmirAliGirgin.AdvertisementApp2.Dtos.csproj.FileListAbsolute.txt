@@ -1,0 +1,15 @@
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.deps.json
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.pdb
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.AssemblyInfoInputs.cache
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.AssemblyInfo.cs
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\refint\EmirAliGirgin.AdvertisementApp2.Dtos.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.pdb
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\ref\EmirAliGirgin.AdvertisementApp2.Dtos.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Entities.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Entities.pdb
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Dtos.csproj.AssemblyReference.cache
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Dtos\obj\Debug\net5.0\EmirAliG.D2414CEC.Up2Date

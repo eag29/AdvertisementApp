@@ -1,0 +1,11 @@
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.deps.json
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\bin\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.pdb
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.AssemblyInfoInputs.cache
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.AssemblyInfo.cs
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.csproj.CoreCompileInputs.cache
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\refint\EmirAliGirgin.AdvertisementApp2.Common.dll
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\EmirAliGirgin.AdvertisementApp2.Common.pdb
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.Common\obj\Debug\net5.0\ref\EmirAliGirgin.AdvertisementApp2.Common.dll

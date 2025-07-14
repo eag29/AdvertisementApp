@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmirAliGirgin.AdvertisementApp2.Entities\EmirAliGirgin.AdvertisementApp2.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmirAliGirgin.AdvertisementApp2.Common\EmirAliGirgin.AdvertisementApp2.Common.csproj" />
+    <ProjectReference Include="..\EmirAliGirgin.AdvertisementApp2.DAL\EmirAliGirgin.AdvertisementApp2.DAL.csproj" />
+    <ProjectReference Include="..\EmirAliGirgin.AdvertisementApp2.Dtos\EmirAliGirgin.AdvertisementApp2.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>

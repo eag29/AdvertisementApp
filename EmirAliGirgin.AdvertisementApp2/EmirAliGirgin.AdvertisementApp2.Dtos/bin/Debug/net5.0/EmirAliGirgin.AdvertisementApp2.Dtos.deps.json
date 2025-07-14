@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EmirAliGirgin.AdvertisementApp2.Dtos/1.0.0": {
+        "dependencies": {
+          "EmirAliGirgin.AdvertisementApp2.Entities": "1.0.0"
+        },
+        "runtime": {
+          "EmirAliGirgin.AdvertisementApp2.Dtos.dll": {}
+        }
+      },
+      "EmirAliGirgin.AdvertisementApp2.Entities/1.0.0": {
+        "runtime": {
+          "EmirAliGirgin.AdvertisementApp2.Entities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EmirAliGirgin.AdvertisementApp2.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmirAliGirgin.AdvertisementApp2.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
