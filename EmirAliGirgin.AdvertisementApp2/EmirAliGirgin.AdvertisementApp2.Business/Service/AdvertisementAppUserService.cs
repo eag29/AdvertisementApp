@@ -5,7 +5,6 @@ using EmirAliGirgin.AdvertisementApp2.Common;
 using EmirAliGirgin.AdvertisementApp2.Common.Enums;
 using EmirAliGirgin.AdvertisementApp2.DAL.UnitOfWork;
 using EmirAliGirgin.AdvertisementApp2.Dtos;
-using EmirAliGirgin.AdvertisementApp2.Dtos.AdvertisementAppUserStatusDtos;
 using EmirAliGirgin.AdvertisementApp2.Entities;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
@@ -48,13 +47,13 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.Service
             return new Response<AdvertisementAppUserCreateDto>(dto, result.ConvertToCustomValidationError());
         }
 
-        public async Task<List<AdvertisementAppUserStatusListDto>> GetList(AdvertisementAppUserStatusType type)
+        public async Task<List<AdvertisementAppUserListDto>> GetList(AdvertisementAppUserStatusType type)
         {
             var query = _uow.GetRepository<AdvertisementAppUser>().GetQuery();
 
-            var list = await query.Include(x => x.Advertisement).Include(x => x.AdvertisementAppUserStatus).Include(x => x.MilitaryStatus).Include(x => x.AppUser).Where(x => x.AdvertisementAppUserStatusId == (int)type).ToListAsync();
+            var list = await query.Include(x => x.Advertisement).Include(x => x.AdvertisementAppUserStatus).Include(x => x.MilitaryStatus).Include(x => x.AppUser).ThenInclude(x => x.Gender).Where(x => x.AdvertisementAppUserStatusId == (int)type).ToListAsync();
 
-            return _mapper.Map<List<AdvertisementAppUserStatusListDto>>(list);
+            return _mapper.Map<List<AdvertisementAppUserListDto>>(list);
         }
 
         public async Task SetStatusAsync(int advertisementId, AdvertisementAppUserStatusType type)

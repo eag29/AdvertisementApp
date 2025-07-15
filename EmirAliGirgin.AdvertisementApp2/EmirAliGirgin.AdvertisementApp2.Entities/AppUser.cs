@@ -13,9 +13,9 @@ namespace EmirAliGirgin.AdvertisementApp2.Entities
         public int GenderId { get; set; }
         public Gender Gender { get; set; }
         public string Username { get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
         public int PhoneNumber { get; set; }
-        public string Email { get; set; }
         public List<AppUserRole> AppUserRoles { get; set; }
         public List<AdvertisementAppUser> AdvertisementAppUsers { get; set; }
     }

@@ -13,7 +13,7 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.Mappings.AutoMapper
     {
         public AdvertisementAppUserStatusProfile()
         {
-            CreateMap<AdvertisementAppUserCreateDto, AdvertisementAppUserStatus>().ReverseMap();
+            CreateMap<AdvertisementAppUserStatusListDto, AdvertisementAppUserStatus>().ReverseMap();
         }
     }
 }

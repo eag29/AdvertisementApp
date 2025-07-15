@@ -13,7 +13,7 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.ValidatonRules.AppUserValidat
         public AppUserLoginCreateValidator()
         {
             RuleFor(x => x.Username).NotEmpty().WithMessage("Kullanıcı adı boş geçilemez");
-            RuleFor(x => x.Username).NotEmpty().WithMessage("Şifre boş geçilemez");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş geçilemez");
         }
     }
 }

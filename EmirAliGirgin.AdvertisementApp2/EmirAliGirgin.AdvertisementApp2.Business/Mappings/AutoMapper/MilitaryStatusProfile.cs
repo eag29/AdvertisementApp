@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using EmirAliGirgin.AdvertisementApp2.Dtos.MilitaryStatus;
+using EmirAliGirgin.AdvertisementApp2.Dtos;
 using EmirAliGirgin.AdvertisementApp2.Entities;
 using System;
 using System.Collections.Generic;

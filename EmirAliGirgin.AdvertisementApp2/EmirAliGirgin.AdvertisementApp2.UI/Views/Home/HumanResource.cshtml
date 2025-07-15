@@ -14,13 +14,13 @@
         {
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading"-@Model[i].Id>
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse-@Model[i].Id" data-bs-target="#collapse-" aria-expanded="@(i == 0)" aria-controls="collapse-@Model[i].Id">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@Model[i].Id" aria-expanded="@(i == 0)" aria-controls="collapse-@Model[i].Id">
                         @Model[i].Title
                     </button>
                 </h2>
-                <div id="collapse-@Model[i].Id" class="accordion-collapse collapse @(i == 0 ? "show" : "")" aria-labelledby="@Model[i].Id" data-bs-parent="#accordionRxample" >
+                <div id="collapse-@Model[i].Id" class="accordion-collapse collapse @(i == 0 ? "show" : "")" aria-labelledby="heading-@Model[i].Id" data-bs-parent="#accordionExample" >
                     <div class="accordion-body">
-                        @Model[i].Description
+                        @Html.Raw(@Model[i].Description)
                         <div>
                             @if (User.Identity.IsAuthenticated)
                             {

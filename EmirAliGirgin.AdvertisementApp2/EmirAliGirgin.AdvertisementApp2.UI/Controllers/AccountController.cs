@@ -24,11 +24,12 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
         private readonly IValidator<UserCreateModel> _createValidator;
         private readonly IMapper _mapper;
 
-        public AccountController(IGenderService genderService, IValidator<UserCreateModel> validator, IMapper mapper, IAdvertisementAppUserService advertisementAppUserService)
+        public AccountController(IGenderService genderService, IValidator<UserCreateModel> validator, IMapper mapper, IAppUserService appUserService)
         {
             _genderService = genderService;
             _createValidator = validator;
             _mapper = mapper;
+            _appUserService = appUserService;
         }
 
         public async Task<IActionResult> SignUp()
@@ -52,7 +53,7 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
             }
             foreach (var item in result.Errors)
             {
-                ModelState.AddModelError(item.ErrorMessage, item.PropertyName);
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
             var response = await _genderService.GetAllAsync();
             model.Genders = new SelectList(response.Data, "Id", "Definition", model.GenderId);
@@ -85,14 +86,13 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
                 var authProperties = new AuthenticationProperties
                 {
                     IsPersistent = dto.RememberMe,
-
                 };
 
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsıdentity), authProperties);
 
                 return RedirectToAction("Index", "Home");
             }
-            ModelState.AddModelError(result.Message, "Kullanıcı adı veya şifre hatalı");
+            ModelState.AddModelError("Kullanıcı adı veya şifre hatalı", result.Message);
 
             return View(dto);
         }

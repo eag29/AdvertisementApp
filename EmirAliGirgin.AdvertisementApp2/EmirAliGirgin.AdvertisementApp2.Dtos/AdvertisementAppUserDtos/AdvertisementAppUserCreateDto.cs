@@ -11,7 +11,7 @@ namespace EmirAliGirgin.AdvertisementApp2.Dtos
         public int AdvertisementAppUserStatusId { get; set; }
         public int MilitaryStatusId { get; set; }
         public int WorkExperience { get; set; }
-        public DateTime EndDate { get; set; }
-        public string CvFile { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string CvPath { get; set; }
     }
 }

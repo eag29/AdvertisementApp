@@ -37,14 +37,13 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.Service
             if (result.IsValid)
             {
                 var user = _mapper.Map<AppUser>(dto);
-                user.AppUserRoles = new List<AppUserRole>();
-                user.AppUserRoles.Add(new AppUserRole()
+                await _uow.GetRepository<AppUser>().CreateAsync(user);
+                await _uow.GetRepository<AppUserRole>().CreateAsync(new AppUserRole
                 {
                     AppUsers = user,
                     AppRoleId = roleID,
                 });
 
-                await _uow.GetRepository<AppUser>().CreateAsync(user);
                 await _uow.SaveChangesAsync();
                 return new Response<AppUserCreateDto>(ResponseType.Succes, dto);
             }

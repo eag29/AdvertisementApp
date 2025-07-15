@@ -15,8 +15,8 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.ValidatonRules.AppUserValidat
             RuleFor(x => x.FirstName).NotEmpty();
             RuleFor(x => x.Surname).NotEmpty();
             RuleFor(x => x.Username).NotEmpty();
+            RuleFor(x => x.Email).NotEmpty();
             RuleFor(x => x.Password).NotEmpty();
-            RuleFor(x => x.PhoneNumber).NotEmpty();
             RuleFor(x => x.GenderId).NotEmpty();
         }
     }

@@ -6,19 +6,23 @@
 <form method="post" asp-action="Send" asp-controller="Advertisement" class="w-75 mx-auto p-3" enctype="multipart/form-data">
 
     <input type="hidden" asp-for="@Model.AdvertisementId">
-    <input type="hidden" asp-for="@Model.AdvertisementAppUserId">
+    <input type="hidden" asp-for="@Model.AppUserId">
 
-    @if (ViewBag.GenderId == (int)GenderType.Erkek)
+    @if (ViewBag.genderId == (int)GenderType.Erkek)
     {
         <div class="mb-3">
             <label> Askerlik Durumu</label>
-            <select onchange="setInputVisibility" asp-for="@Model.MilitaryStatusId" asp-items="@ViewBag.MilitaryStatus" class="form-control"></select>
+            <select onchange="setInputVisibility()" asp-for="@Model.MilitaryStatusId" asp-items="@ViewBag.MilitaryStatus" class="form-select"></select>
         </div>
 
-       <div class="mb-3" style="display:none">
+       <div id="dateDiv" class="mb-3" style="display:none">
         <label> Tecil Tarihi</label>
         <input type="date" asp-for="@Model.EndDate" class="form-control" />
-       </div>
+        </div>
+    }
+    else
+    {
+        <input type="hidden" asp-for="@Model.MilitaryStatusId" value="@((int)MilitaryStatusType.Muaf)"/>
     }
 
     <div class="mb-3">

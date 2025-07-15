@@ -1,15 +1,15 @@
 ﻿using EmirAliGirgin.AdvertisementApp2.Dtos.Interfaces;
-using EmirAliGirgin.AdvertisementApp2.Dtos.MilitaryStatus;
+using EmirAliGirgin.AdvertisementApp2.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmirAliGirgin.AdvertisementApp2.Dtos.AdvertisementAppUserStatusDtos
+namespace EmirAliGirgin.AdvertisementApp2.Dtos
 {
-    public class AdvertisementAppUserStatusListDto: IDto
+    public class AdvertisementAppUserStatusListDto
     {
-        public MilitaryStatusListDto MilitaryStatusListDtos { get; set; }
+        public string Definition { get; set; }
     }
 }

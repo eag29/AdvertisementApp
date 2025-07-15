@@ -90,3 +90,6 @@ C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.Advertiseme
 C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Advertisement\ApprovedList.cshtml.g.cs
 C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Advertisement\List.cshtml.g.cs
 C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Application\List.cshtml.g.cs
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Advertisement\RejectedList.cshtml.g.cs
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Application\Create.cshtml.g.cs
+C:\Users\emira\OneDrive\Belgeler\Projeler\CoreProjeler\EmirAliGirgin.AdvertisementApp2\EmirAliGirgin.AdvertisementApp2.UI\obj\Debug\net5.0\Razor\Views\Application\Update.cshtml.g.cs

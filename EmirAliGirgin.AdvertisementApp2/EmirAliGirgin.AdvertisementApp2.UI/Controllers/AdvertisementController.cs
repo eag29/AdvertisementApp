@@ -1,7 +1,6 @@
 ﻿using EmirAliGirgin.AdvertisementApp2.Business.Interfaces;
 using EmirAliGirgin.AdvertisementApp2.Common.Enums;
 using EmirAliGirgin.AdvertisementApp2.Dtos;
-using EmirAliGirgin.AdvertisementApp2.Dtos.MilitaryStatus;
 using EmirAliGirgin.AdvertisementApp2.UI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -27,11 +26,7 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
             _advertisementAppUserService = advertisementAppUserService;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-        [Authorize("Member")]
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Send(int advertisementId)
         {
             var userId = int.Parse((User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)).Value);
@@ -56,28 +51,30 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
             return View(new AdvertisementAppUserCreateModel
             {
                 AdvertisementId = advertisementId,
-                AdvertisementAppUserId = userId,
+                AppUserId = userId,
             });
         }
+        [Authorize(Roles = "Member")]
         [HttpPost]
         public async Task<IActionResult> Send(AdvertisementAppUserCreateModel model)
         {
-            var dto = new AdvertisementAppUserCreateDto();
+            AdvertisementAppUserCreateDto dto = new();
 
             if (model.CvFile != null)
             {
                 var fileName = Guid.NewGuid().ToString();
                 var extensionName = Path.GetExtension(model.CvFile.FileName);
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "cvfiles", fileName + extensionName);
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "cvFiles", fileName + extensionName);
                 var stream = new FileStream(path, FileMode.Create);
                 await model.CvFile.CopyToAsync(stream);
-                dto.CvFile = path;
+                dto.CvPath = path;
             }
             dto.EndDate = model.EndDate;
             dto.AdvertisementId = model.AdvertisementId;
             dto.AdvertisementAppUserStatusId = model.AdvertisementAppUserStatusId;
             dto.AppUserId = model.AppUserId;
             dto.MilitaryStatusId = model.MilitaryStatusId;
+            dto.WorkExperience = model.WorkExperience;
 
             var response = await _advertisementAppUserService.CreateAsync(dto);
             if (response.ResponseType == Common.ResponseType.ValidationError)
@@ -111,10 +108,10 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
             return RedirectToAction("HumanResource", "Home");
         }
 
-        [Authorize("Admin")]
-        public IActionResult List()
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> List()
         {
-            var list = _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.Basvurdu);
+            var list = await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.Basvurdu);
             return View(list);
         }
 
@@ -124,18 +121,18 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
             return RedirectToAction("List");
         }
 
-        [Authorize("Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ApprovedList()
         {
-            await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.MulkataCagrildi);
-            return View();
+            var list = await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.MulkataCagrildi);
+            return View(list);
         }
 
-        [Authorize("Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> RejectedList()
         {
-            await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.MulkataCagrildi);
-            return View();
+            var list = await _advertisementAppUserService.GetList(AdvertisementAppUserStatusType.OlumsuzDegerlendirildi);
+            return View(list);
         }
     }
 }

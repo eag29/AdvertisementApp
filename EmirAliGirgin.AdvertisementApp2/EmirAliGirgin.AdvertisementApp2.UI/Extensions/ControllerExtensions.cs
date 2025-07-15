@@ -15,7 +15,7 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Extensions
             {
                 foreach (var item in response.ValiationErrors)
                 {
-                    controller.ModelState.AddModelError(item.ErrorMessage, item.PropertyName);
+                    controller.ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
                 return controller.View(response.Data);
             }

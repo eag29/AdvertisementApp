@@ -34,7 +34,7 @@
                         <td>@item.AppUser.FirstName @item.AppUser.Surname</td>
                         <td>@item.AppUser.Gender.Definition</td>
                         <td>@item.MilitaryStatus.Definition</td>
-                        <td>@(item.EndDate==null?"Muaf yada yapmış":item.EndDate.ToString("dddd, ddd MMM yyyy"))</td>
+                        <td>@(item.EndDate==null?"Muaf yada yapmış":item.EndDate?.ToString("dddd, ddd MMM yyyy"))</td>
                         <td>@item.WorkExperience</td>
                         <td>
                             <a asp-action="SetStatus" asp-controller="Advertisement" asp-route-advertisementAppUserId="@item.AdvertisementId" asp-route-type="@((int)AdvertisementAppUserStatusType.OlumsuzDegerlendirildi)"></a>

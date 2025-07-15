@@ -17,7 +17,7 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.ValidatonRules.AdvertisementA
             RuleFor(x => x.AdvertisementId).NotEmpty();
             RuleFor(x => x.AppUserId).NotEmpty();
             RuleFor(x => x.WorkExperience).NotEmpty();
-            RuleFor(x => x.CvFile).NotEmpty();
+            RuleFor(x => x.CvPath).NotEmpty();
             RuleFor(x => x.EndDate).NotEmpty().When(x => x.MilitaryStatusId == (int)MilitaryStatusType.Tecilli);
         }
     }

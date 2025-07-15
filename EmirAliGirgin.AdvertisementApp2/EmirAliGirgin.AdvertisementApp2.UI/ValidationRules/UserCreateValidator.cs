@@ -10,12 +10,12 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.ValidationRules
             RuleFor(x => x.FirstName).NotEmpty().WithMessage("Lütfen bir isim giriniz");
             RuleFor(x => x.Surname).NotEmpty().WithMessage("Lütfen bir soyisim giriniz");
             RuleFor(x => x.Username).NotEmpty().WithMessage("Lütfen bir kullanıcı adı giriniz");
+            RuleFor(x => x.Email).NotEmpty().WithMessage("Lütfen bir email adresi giriniz");
             RuleFor(x => x.Username).MinimumLength(3).WithMessage("Kullanıcı adı 3 karakterden az olamaz");
             RuleFor(x => x.Username).MaximumLength(10).WithMessage("Kullanıcı adı 10 karakterden fazla olamaz");
             RuleFor(x => x.Password).MinimumLength(4).WithMessage("Şifre minimum 4 karakterden oluşmalıdır.");
             RuleFor(x => x.Password).MaximumLength(10).WithMessage("Şifre maksimum 10 karakterden oluşmalıdır.");
             RuleFor(x => x.Password).Equal(x => x.ConfirmPassword).WithMessage("Şifreler uyuşmuyor");
-            RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Lütfen bir telefon numarası giriniz");
             RuleFor(x => x.GenderId).NotEmpty().WithMessage("Lütfen bir cinsiyet seçiniz");
             RuleFor(x => new
             {

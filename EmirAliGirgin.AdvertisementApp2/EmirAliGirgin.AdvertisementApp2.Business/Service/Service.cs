@@ -54,6 +54,7 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.Service
                 return new Response<IDto>(ResponseType.NotFound, $"{id}'ye sahip data bulunamadı");
             }
             _uow.GetRepository<T>().Remove(findedId);
+            await _uow.SaveChangesAsync();
             return new Response(ResponseType.Succes);
         }
         public async Task<IResponse<CreateDto>> CreateAsync(CreateDto createDto)
@@ -73,13 +74,14 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.Service
             var result = _updateValidator.Validate(updateDto);
             if (result.IsValid)
             {
-               var unchangedValue = await _uow.GetRepository<T>().FindByAsync(updateDto);
+               var unchangedValue = await _uow.GetRepository<T>().FindByAsync(updateDto.Id);
                 if (unchangedValue == null)
                 {
                     return new Response<UpdateDto>(ResponseType.NotFound, $"{updateDto.Id}'ye sahip data bulunamadı");
                 }
                 var updatedValue =  _mapper.Map<T>(updateDto);
                 _uow.GetRepository<T>().Update(updatedValue, unchangedValue);
+                await _uow.SaveChangesAsync();
                 return new Response<UpdateDto>(ResponseType.Succes, updateDto);
             }
             return new Response<UpdateDto>(updateDto, result.ConvertToCustomValidationError());

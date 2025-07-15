@@ -34,9 +34,13 @@
                         <td>@item.AppUser.FirstName @item.AppUser.Surname</td>
                         <td>@item.AppUser.Gender.Definition</td>
                         <td>@item.MilitaryStatus.Definition</td>
-                        <td>@(item.EndDate==null?"Muaf yada yapmış":item.EndDate.ToString("dddd, ddd MMM yyyy"))</td>
+                        <td>@(item.EndDate==null?"Muaf yada yapmış":item.EndDate?.ToString("dddd, ddd MMM yyyy"))</td>
                         <td>@item.WorkExperience</td>
                         <td>@item.AdvertisementAppUserStatus.Definition</td>
+                        <td>
+                            <a asp-action="SetStatus" asp-controller="Advertisement" asp-route-advertisementAppUserId="@item.Id" asp-route-type="@((int)AdvertisementAppUserStatusType.MulkataCagrildi)" > Mülakata Çağır </a>
+                            <a asp-action="SetStatus" asp-controller="Advertisement" asp-route-advertisementAppUserId="@item.Id" asp-route-type="@((int)AdvertisementAppUserStatusType.OlumsuzDegerlendirildi)" > Reddet </a>
+                        </td>
                     </tr>
                 }
             </tbody>

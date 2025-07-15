@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmirAliGirgin.AdvertisementApp2.Dtos.MilitaryStatus
+namespace EmirAliGirgin.AdvertisementApp2.Dtos
 {
     public class MilitaryStatusListDto: IDto
     {

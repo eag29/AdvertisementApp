@@ -2,11 +2,13 @@
 using EmirAliGirgin.AdvertisementApp2.Dtos;
 using EmirAliGirgin.AdvertisementApp2.UI.Extensions;
 using EmirAliGirgin.AdvertisementApp2.UI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
 {
+    [Authorize(Roles="Admin")]
     public class ApplicationController : Controller
     {
         private readonly IAdvertisementService _advertisementService;
@@ -19,12 +21,12 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
         public async Task<IActionResult> List()
         {
             var list = await _advertisementService.GetAllAsync();
-            return View(list);
+            return this.ResponseView(list);
         }
 
         public IActionResult Create()
         {
-            return View(new AdvertisementAppUserCreateModel());
+            return View(new CreateAdvertisementDto());
         }
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdvertisementDto dto)
@@ -47,8 +49,8 @@ namespace EmirAliGirgin.AdvertisementApp2.UI.Controllers
 
         public async Task<IActionResult> Remove(int id)
         {
-            await _advertisementService.RemoveAsync(id);
-            return RedirectToAction("List");
+            var response = await _advertisementService.RemoveAsync(id);
+            return this.ResponseRedirectAction(response, "List");
         }
     }
 }

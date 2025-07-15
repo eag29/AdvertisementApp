@@ -15,6 +15,8 @@ namespace EmirAliGirgin.AdvertisementApp2.Business.ValidatonRules.AdvertisementV
             RuleFor(x => x.Title).NotEmpty();
             RuleFor(x => x.Description).NotEmpty();
             RuleFor(x => x.Status).NotEmpty();
+            RuleFor(x => x.Status).NotEmpty();
+            RuleFor(x => x.CreatedDate).NotEmpty();
         }
     }
 }

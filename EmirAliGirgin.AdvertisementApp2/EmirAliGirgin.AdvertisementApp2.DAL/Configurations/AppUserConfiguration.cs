@@ -17,7 +17,6 @@ namespace EmirAliGirgin.AdvertisementApp2.DAL.Configurations
             builder.Property(x => x.Surname).HasMaxLength(20).IsRequired();
             builder.Property(x => x.Username).HasMaxLength(10).IsRequired();
             builder.Property(x => x.Password).HasMaxLength(6).IsRequired();
-            builder.Property(x => x.Email).IsRequired();
 
             builder.HasOne(x => x.Gender).WithMany(x => x.AppUsers).HasForeignKey(x => x.GenderId);
         }
