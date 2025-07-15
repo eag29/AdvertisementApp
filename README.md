@@ -73,7 +73,7 @@ Kullanıcı arayüzünün bulunduğu katmandır. MVC yapısına uygun olarak Con
 
 # İnsan Kaynakları
 
-#<img width="1897" height="871" alt="Ekran görüntüsü 2025-07-15 181135" src="https://github.com/user-attachments/assets/b322b449-c701-4410-9dcf-c8b745da21bd" />
+<img width="1897" height="871" alt="Ekran görüntüsü 2025-07-15 181135" src="https://github.com/user-attachments/assets/b322b449-c701-4410-9dcf-c8b745da21bd" />
 
 
 # Başvurular
