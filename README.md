@@ -66,4 +66,17 @@ Kullanıcı arayüzünün bulunduğu katmandır. MVC yapısına uygun olarak Con
 💻 GitHub: https://github.com/eag29
 
 
+# Ana Sayfa
+
+<img width="1897" height="862" alt="Ekran görüntüsü 2025-07-15 181017" src="https://github.com/user-attachments/assets/5cb7d06b-8d35-4ac3-91f7-c40c3efad426" />
+
+
+# İnsan Kaynakları
+
+#<img width="1897" height="871" alt="Ekran görüntüsü 2025-07-15 181135" src="https://github.com/user-attachments/assets/b322b449-c701-4410-9dcf-c8b745da21bd" />
+
+
+# Başvurular
+<img width="1916" height="862" alt="Ekran görüntüsü 2025-07-15 181204" src="https://github.com/user-attachments/assets/982493ce-8eba-4648-8c7e-8da8197dcee4" />
+
 
